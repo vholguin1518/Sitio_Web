@@ -1,0 +1,463 @@
+
+/* =====================================
+   RINCON DEL ANTOJO
+   HOJA DE ESTILOS EXTERNA
+===================================== */
+
+/* VARIABLES DE COLORES */
+:root {
+    --rojo: #c62828;
+    --rojo-oscuro: #941b1b;
+    --amarillo: #f5c518;
+    --negro: #222222;
+    --blanco: #ffffff;
+    --crema: #fff8e8;
+    --gris: #666666;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --radio: 12px;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--crema);
+    color: var(--negro);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background-color: var(--negro);
+    padding: 20px 0;
+}
+
+.encabezado .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* NOMBRE DEL NEGOCIO */
+.logo {
+    color: var(--blanco);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.logo span {
+    color: var(--rojo);
+}
+
+/* MENU VERTICAL A LA IZQUIERDA */
+ul.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+nav ul.menu li a.menu {
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 0;
+    transition: 0.3s;
+}
+
+nav ul.menu li a.menu:hover {
+    color: var(--amarillo);
+}
+
+nav ul.menu li a.activo {
+    color: var(--amarillo);
+}
+
+/* PAGINA ACTUAL */
+nav ul.menu li a.activo {
+    color: var(--amarillo);
+    background-color: transparent;
+}
+
+/* =====================================
+   PORTADA PRINCIPAL
+===================================== */
+
+.portada {
+    background-color: var(--negro);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.portada-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagen-portada {
+    width: 100%;
+    max-width: 850px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.portada h1 {
+    color: var(--amarillo);
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.portada p {
+    font-size: 18px;
+    max-width: 750px;
+}
+
+.primera {
+    color: var(--amarillo);
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 11px 24px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+/* =====================================
+   SECCIONES
+===================================== */
+
+.seccion {
+    padding: 45px 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: var(--rojo);
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.descripcion-seccion {
+    text-align: center;
+    color: var(--gris);
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* PRESENTACION */
+.bienvenida {
+    background-color: var(--blanco);
+    padding: 28px;
+    border-left: 5px solid var(--rojo);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bienvenida p {
+    margin-bottom: 12px;
+}
+
+#bienvenida {
+    color: var(--rojo);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =====================================
+   PRODUCTOS DESTACADOS
+===================================== */
+
+.productos-destacados {
+    background-color: #fff0c2;
+}
+
+.lista-productos {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.lista-productos li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: var(--blanco);
+    border-radius: 7px;
+}
+
+.lista-productos li::marker {
+    color: var(--rojo);
+    font-weight: bold;
+}
+
+.lista-productos > li {
+    border-left: 4px solid var(--rojo);
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+/* =====================================
+   PORTADA DEL CATALOGO
+===================================== */
+
+.portada-catalogo {
+    background-color: #f4e5c3;
+    color: var(--negro);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.portada-catalogo h1 {
+    color: var(--rojo);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.portada-catalogo p {
+    font-size: 17px;
+}
+
+/* =====================================
+   TARJETAS DEL CATALOGO
+===================================== */
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tarjeta-producto {
+    background-color: var(--blanco);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.tarjeta-producto h3 {
+    color: var(--rojo);
+    font-size: 20px;
+    padding: 15px 12px 5px;
+}
+
+.tarjeta-producto p {
+    color: var(--gris);
+    padding: 5px 18px 15px;
+    flex-grow: 1;
+}
+
+.boton-producto {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 9px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-producto:hover {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+/* AVISO DEL CATALOGO */
+.aviso {
+    color: var(--rojo);
+    margin: 20px 0;
+}
+
+/* =====================================
+   INFORMACION ADICIONAL
+===================================== */
+
+.informacion-extra {
+    background-color: #eeeeee;
+    color: var(--negro);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.informacion-extra h3 {
+    color: var(--rojo);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   PIE DE PAGINA
+===================================== */
+
+.pie-pagina {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+.pie-pagina p {
+    margin: 5px;
+}
+
+.pie-pagina a {
+    color: var(--amarillo);
+    font-weight: bold;
+}
+
+.pie-pagina a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   OTROS SELECTORES CSS
+===================================== */
+
+/* SELECTOR DESCENDIENTE */
+.encabezado nav a {
+    font-weight: bold;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+.aviso + p {
+    color: var(--rojo);
+}
+
+/* SELECTOR DE ATRIBUTO */
+a[href^="https://"] {
+    text-decoration: underline;
+}
+
+/* =====================================
+   DISEÑO RESPONSIVE
+===================================== */
+
+/* TABLETS */
+@media screen and (max-width: 900px) {
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .encabezado .contenedor {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 600px) {
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    ul.menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul.menu li a.menu {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .portada h1,
+    .portada-catalogo h1 {
+        font-size: 25px;
+    }
+
+    .imagen-portada {
+        height: 220px;
+    }
+
+    .seccion {
+        padding: 30px 0;
+    }
+
+    .titulo-seccion {
+        font-size: 23px;
+    }
+
+    .bienvenida {
+        padding: 20px;
+    }
+
+    .tarjeta-producto img {
+        height: 200px;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rincon del Antojo: hamburguesas, hot dogs y deliciosas opciones de comida rapida.">
+    <title>Rincon del Antojo | Inicio</title>
+
+    <!-- Hoja de estilo externa -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Hoja de estilo interna -->
+    <style>
+
+        /* SELECTOR UNIVERSAL */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* SELECTOR DE ELEMENTO */
+        p {
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #D4AF37;
+        }
+
+        /* SELECTOR DE CLASE */
+        .menu {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primera {
+            font-style: italic;
+        }
+
+        /* SELECTOR ESPECÍFICO */
+        a.menu {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /* SELECTOR DE ID */
+        #bienvenida {
+            font-weight: bold;
+        }
+
+        /* SELECTOR DE AGRUPAMIENTO */
+        h2, h3 {
+            color: #c62828;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="contenedor">
+            <h2 class="logo">
+                Rincon <span>del Antojo</span>
+            </h2>
+
+            <!-- MENU DE NAVEGACION -->
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="menu activo" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="catalogo.html">Catalogo</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PORTADA -->
+        <section class="portada">
+            <div class="contenedor portada-contenido">
+                <img src="img/comida-principal.jpg" alt="Hamburguesas y comida rapida de Rincon del Antojo" class="imagen-portada">
+                <h1>¡Bienvenidos al Rincon del Antojo!</h1>
+                <p class="primera">
+                    El sabor que alegra tus mejores momentos.
+                </p>
+                <p>
+                    Descubre nuestras hamburguesas, hot dogs y deliciosas opciones para disfrutar.
+                </p>
+                <a href="catalogo.html" class="boton">
+                    Explorar menu
+                </a>
+            </div>
+
+        </section>
+
+        
+        <!-- PRESENTACION -->
+        <section class="seccion">
+            <div class="contenedor">
+        <h2 class="titulo-seccion">
+            Un lugar para disfrutar
+               </h2>
+
+               <article class="bienvenida">
+                   <h3>Nuestra historia</h3>
+                   <p id="bienvenida">
+                       ¡Gracias por visitar el Rincon del Antojo!
+                   </p>
+                   <p>
+                       Esta propuesta nace de una experiencia que comparti con mi hermana, preparando hamburguesas y hot dogs. Nos gusta la idea de combinar sabores y crear opciones que puedan disfrutarse en cualquier momento.
+                   </p>
+                   <p>
+                       Queremos transmitir esa emocion de compartir algo rico y convertir cada antojo en una experiencia especial.
+                   </p>
+
+                </article>
+            </div>
+       </section>
+
+
+
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="seccion productos-destacados">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">
+                    Nuestros antojos favoritos
+                </h2>
+                <p class="descripcion-seccion">
+                    Algunas de las opciones que podras encontrar
+                    en nuestro catalogo:
+                </p>
+                <ul class="lista-productos">
+                    <li>Hamburguesas clasicas y especiales.</li>
+                    <li>Hot dogs con diferentes ingredientes.</li>
+                    <li>Papas fritas y papas con queso.</li>
+                    <li>Alitas BBQ.</li>
+                    <li>Nuggets de pollo y Salchipapas.</li>
+                </ul>
+            </div>
+
+        </section>
+
+
+        <!-- INVITACION -->
+        <section class="seccion">
+            <div class="contenedor texto-centro">
+                <h2 class="titulo-seccion">
+                    ¿Ya sabes que se te antoja?
+                </h2>
+                <p>
+                    Revisa nuestro catalogo y descubre las diferentes opciones de comida rapida.
+                </p>
+                <a href="catalogo.html" class="boton">
+                    Ver catalogo completo
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACION SECUNDARIA -->
+        <aside class="informacion-extra">
+            <div class="contenedor">
+                <h3>Un antojo para cada momento</h3>
+                <p>
+                    Porque siempre hay un buen momento para disfrutar de una hamburguesa o un hot dog.
+                </p>
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- PIE DE PAGINA -->
+    <footer class="pie-pagina">
+        <p>
+            &copy; 2026 Rincon del Antojo.
+        </p>
+        <p>
+            <a href="https://www.w3.org/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Sitio oficial del W3C
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
+

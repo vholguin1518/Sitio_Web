@@ -1,8 +1,5 @@
 
-/* =====================================
-   RINCON DEL ANTOJO
-   HOJA DE ESTILOS EXTERNA
-===================================== */
+/* ----RINCON DEL ANTOJO HOJA DE ESTILOS EXTERNA */
 
 /* VARIABLES DE COLORES */
 :root {
@@ -106,9 +103,7 @@ nav ul.menu li a.activo {
     background-color: transparent;
 }
 
-/* =====================================
-   PORTADA PRINCIPAL
-===================================== */
+/* ----PORTADA PRINCIPAL---- */
 
 .portada {
     background-color: var(--negro);
@@ -167,9 +162,7 @@ nav ul.menu li a.activo {
     color: var(--negro);
 }
 
-/* =====================================
-   SECCIONES
-===================================== */
+/* ----SECCIONES---- */
 
 .seccion {
     padding: 45px 0;
@@ -210,9 +203,7 @@ nav ul.menu li a.activo {
     font-weight: bold;
 }
 
-/* =====================================
-   PRODUCTOS DESTACADOS
-===================================== */
+/* ----PRODUCTOS DESTACADOS---- */
 
 .productos-destacados {
     background-color: #fff0c2;
@@ -244,9 +235,7 @@ nav ul.menu li a.activo {
     text-align: center;
 }
 
-/* =====================================
-   PORTADA DEL CATALOGO
-===================================== */
+/* ---- PORTADA DEL CATALOGO---- */
 
 .portada-catalogo {
     background-color: #f4e5c3;
@@ -265,9 +254,7 @@ nav ul.menu li a.activo {
     font-size: 17px;
 }
 
-/* =====================================
-   TARJETAS DEL CATALOGO
-===================================== */
+/* ----TARJETAS DEL CATALOGO---- */
 
 .catalogo-grid {
     display: grid;
@@ -333,9 +320,7 @@ nav ul.menu li a.activo {
     margin: 20px 0;
 }
 
-/* =====================================
-   INFORMACION ADICIONAL
-===================================== */
+/* ----INFORMACION ADICIONAL */
 
 .informacion-extra {
     background-color: #eeeeee;
@@ -350,9 +335,7 @@ nav ul.menu li a.activo {
     margin-bottom: 10px;
 }
 
-/* =====================================
-   PIE DE PAGINA
-===================================== */
+/* ----PIE DE PAGINA---- */
 
 .pie-pagina {
     background-color: var(--negro);
@@ -374,9 +357,7 @@ nav ul.menu li a.activo {
     text-decoration: underline;
 }
 
-/* =====================================
-   OTROS SELECTORES CSS
-===================================== */
+/* ----OTROS SELECTORES CSS---- */
 
 /* SELECTOR DESCENDIENTE */
 .encabezado nav a {
@@ -393,9 +374,7 @@ a[href^="https://"] {
     text-decoration: underline;
 }
 
-/* =====================================
-   DISEÑO RESPONSIVE
-===================================== */
+/* ---- DISEÑO RESPONSIVE---- */
 
 /* TABLETS */
 @media screen and (max-width: 900px) {
